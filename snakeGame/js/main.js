@@ -3,6 +3,7 @@ var snakeLength;
 var fruitLoc;
 var dir = 1;
 var tid;
+var score = 0;
 
 $(document).ready(
 	function () {
@@ -103,6 +104,7 @@ function endGame() {
 function resetGame() {
 	snakeLoc = {};
 	dir = 1;
+	score = 0;
 	clearGrid();
 	createSnake();
 	startPlaying();
@@ -196,6 +198,7 @@ function hitFruit() {
 		y: snakeLoc[snakeLength - 1].y
 	}
 	snakeLength++;
+	$("#score").val(score++);
 }
 
 function onFruit() {
