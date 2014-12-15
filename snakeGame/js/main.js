@@ -198,7 +198,7 @@ function hitFruit() {
 		y: snakeLoc[snakeLength - 1].y
 	}
 	snakeLength++;
-	$("#score").val(score++);
+	$("#score").text(score++);
 }
 
 function onFruit() {
