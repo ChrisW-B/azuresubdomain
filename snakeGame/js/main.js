@@ -105,6 +105,7 @@ function resetGame() {
 	snakeLoc = {};
 	dir = 1;
 	score = 0;
+	$("#score").text(score);
 	clearGrid();
 	createSnake();
 	startPlaying();
