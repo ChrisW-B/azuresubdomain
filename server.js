@@ -30,4 +30,4 @@ mybot.on('botMessage', function(b, message) {
 
 console.log("i am serving");
 var port = process.env.PORT || 1337;
-mybot.serve(port);
+mybot.serve(8000);
