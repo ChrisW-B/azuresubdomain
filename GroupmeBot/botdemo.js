@@ -29,4 +29,5 @@ mybot.on('botMessage', function(b, message) {
 });
 
 console.log("i am serving");
-mybot.serve(8000);
+var port = process.env.PORT || 1337;
+mybot.serve(port);
